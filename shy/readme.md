@@ -5,20 +5,17 @@ This folder is a collection of assignments and projects from SJTU Open Hardware 
 ## 目录
 
 - Week5 | 2023-10-10
-  - Markdown Syntax:  [陆游器（陆地游泳器）产品说明书](#陆游器（陆地游泳器）产品说明书)
+  - Markdown Syntax:  [陆游器/陆地游泳器产品说明书](#陆游器/陆地游泳器产品说明书)
   - Introduction to OpenCV:  [作业一_兔子](#作业一_兔子)
 
+------
 
 
 
+## 陆游器/陆地游泳器产品说明书
 
-## 陆游器（陆地游泳器）产品说明书
+<img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180809/7c1d68ba8ee548f8b01839bcadfca18c.jpeg" alt="Rabbit_2" style="zoom:50%;" />
 
-<p align="center">
-  <samp>
-    <img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180809/7c1d68ba8ee548f8b01839bcadfca18c.jpeg" align="center">
-  </samp>
-</p>
 1. [产品概述](#1-产品概述)
 2. [技术规格](#2-技术规格)
 3. [特色功能](#3-特色功能)

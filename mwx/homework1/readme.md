@@ -20,4 +20,4 @@ print(img.shape)
 ```
 ---
 ## 图片
-![](download.jpg)
+![](rabbit1.png)

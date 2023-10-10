@@ -47,3 +47,4 @@ cv2.imwrite('9eye_rabbit.jpg',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows
 ```
+![rabbit](https://github.com/ophwsjtu18/ohw23f/blob/main/hpc/9eye_rabbit.jpg)

@@ -28,4 +28,4 @@
 |材质|	ABS塑料|
 ---
 ## 产品图片
- ![]([https://www.welcomewildlife.com/wp-content/uploads/2019/01/Eastern-Cottontail-ears.jpg](https://img1.baidu.com/it/u=4281336462,2342169210&fm=253&fmt=auto&app=120&f=JPEG?w=521&h=500)https://img1.baidu.com/it/u=4281336462,2342169210&fm=253&fmt=auto&app=120&f=JPEG?w=521&h=500)
+ ![](https://www.welcomewildlife.com/wp-content/uploads/2019/01/Eastern-Cottontail-ears.jpg)

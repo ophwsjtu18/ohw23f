@@ -83,5 +83,5 @@ cv2.imwrite('9rectangles.jpg',img)
 
 ### 2.结果
 
-![Rabbit_2](9rectangles.jpg)
+![Rabbit_2](作业一/9rectangles.jpg)
 

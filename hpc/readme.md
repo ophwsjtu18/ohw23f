@@ -1,3 +1,8 @@
+# hpc
+[好用的电风扇使用手册](#好用的电风扇使用手册)
+[作业1](#作业1)
+
+---
 # 好用的电风扇使用手册
 
 ## 基本信息
@@ -25,3 +30,20 @@
 [点这里有好用的电风扇可以白嫖](www.bilibili.com)
 
 ![meme](https://img1.imgtp.com/2023/10/10/3hXM67u2.jpeg)
+
+---
+# 作业1
+code:
+```python
+import cv2
+import numpy as np
+img = cv2.imread('rabbit.jpg',1)
+for i in range(0,3):
+    for j in range(0,3):
+        img[(0+j*50):(50+j*50),(0+i*50):(50+i*50)]=img[80:130,200:250]
+        cv2.rectangle(img,(0+i*50,0+j*50),(50+i*50,50+j*50),(0,255,0),2)
+cv2.imshow('image',img)
+cv2.imwrite('9eye_rabbit.jpg',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+```

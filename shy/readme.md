@@ -1,6 +1,6 @@
 # 陆游器（陆地游泳器）产品说明书
 
-![image](https://github.com/ophwsjtu18/ohw23f/assets/136332166/11580c19-38f7-41db-a53f-a40cb28b071c)<p align="center">
+<p align="center">
   <samp>
     <img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180809/7c1d68ba8ee548f8b01839bcadfca18c.jpeg" align="center">
   </samp>

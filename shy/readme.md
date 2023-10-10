@@ -14,7 +14,7 @@ This folder is a collection of assignments and projects from SJTU Open Hardware 
 
 ## 陆游器/陆地游泳器产品说明书
 
-<img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180809/7c1d68ba8ee548f8b01839bcadfca18c.jpeg" alt="Rabbit_2" style="zoom:50%;" />
+<img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180809/7c1d68ba8ee548f8b01839bcadfca18c.jpeg" alt="Rabbit_2" style="zoom:25%;" />
 
 1. [产品概述](#1-产品概述)
 2. [技术规格](#2-技术规格)

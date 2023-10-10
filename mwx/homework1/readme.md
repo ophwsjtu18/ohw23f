@@ -1,6 +1,8 @@
 # 作业一
 ---
 ## 代码
+```
+{
 import numpy as np
 import cv2
 
@@ -14,6 +16,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 print(img.shape)
 
+}
+```
 ---
 ## 图片
-![](rabbit.jpg)
+![](download.jpg)

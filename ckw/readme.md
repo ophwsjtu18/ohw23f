@@ -3,7 +3,7 @@
 import numpy as np
 import cv2
 
-# Load an color image in grayscale
+
 img = cv2.imread('rabbit.jpg')
 for i in range(3):
     for j in range(3):

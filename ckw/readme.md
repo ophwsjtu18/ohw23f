@@ -25,4 +25,4 @@ cv2.waitKey(10000)
 cv2.destroyAllWindows()
 
 
-![Alternative text]("homework1_1_img.jpg")
+![alt text](homework1_1_img.jpg)

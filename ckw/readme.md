@@ -25,4 +25,4 @@ cv2.waitKey(10000)
 cv2.destroyAllWindows()
 
 
-![Alternative text](D:\opencv教程\homework1_1_img.jpg"homework1_1_img")
+![Alternative text]("homework1_1_img.jpg")

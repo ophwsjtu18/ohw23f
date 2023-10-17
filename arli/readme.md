@@ -3,3 +3,4 @@
 ### 挑战5：在github里搜索  python语言的 人脸识别  face detection 代码。
 ## 第二次课，2023年10月17日
 ### 学习mixly，使用电子积木
+### 学习MQTT协议

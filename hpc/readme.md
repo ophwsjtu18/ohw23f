@@ -1,6 +1,7 @@
 # hpc
 [好用的电风扇使用手册](#好用的电风扇使用手册)  
 [作业1](#作业1)  
+[作业2](#作业2)
 
 ---
 # 好用的电风扇使用手册
@@ -48,3 +49,49 @@ cv2.waitKey(0)
 cv2.destroyAllWindows
 ```
 ![rabbit](https://github.com/ophwsjtu18/ohw23f/blob/main/hpc/9eye_rabbit.jpg)
+
+# 作业2
+code:
+```python
+import random
+import time
+import serial
+from paho.mqtt import client as mqtt_client
+
+ser = serial.Serial("COM5", 9600)
+
+broker = 'mqtt.16302.com'
+port = 1883
+topic = "1017"
+client_id = f'python-mqtt-{random.randint(0, 1000)}'
+
+
+def on_connect(client, userdata, flags, rc):
+    if rc == 0:
+        print("Connected to MQTT Broker!",client,userdata)
+    else:
+        print("Failed to connect, return code %d\n", rc)
+
+client = mqtt_client.Client(client_id)
+client.on_connect = on_connect
+client.connect(broker, port)
+
+
+def on_message(client, userdata, msg):
+    print("Received from topic",topic,msg.payload.decode())
+    a = msg.payload.decode()
+    if ser.isOpen():
+        print("打开成功")
+        time.sleep(2)
+        write_len = ser.write(a.encode("utf-8"))
+        print(write_len)
+        time.sleep(write_len*1.5)
+    else:
+        print("打开失败")
+    
+
+client.subscribe(topic)
+client.on_message = on_message
+client.loop_forever()
+
+```

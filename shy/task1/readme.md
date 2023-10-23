@@ -27,5 +27,5 @@ cv2.imwrite('9rectangles.jpg',img)
 
 ### 2.结果
 
-![](https://github.com/ophwsjtu18/ohw23f/tree/main/shy/task1/9rectangles.jpg)
+![](9rectangles.jpg)
 

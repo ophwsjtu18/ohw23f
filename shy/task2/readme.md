@@ -153,6 +153,6 @@
 
 - 运行效果
 
-  ![image-20231024025337264](https://picgobucketshihy.oss-cn-shanghai.aliyuncs.com/image-20231024025337264.png)
+  ![](https://github.com/ophwsjtu18/ohw23f/blob/main/shy/media/task2_display.png)
 
   [查看视频](https://github.com/ophwsjtu18/ohw23f/tree/main/shy/task2/效果展示.mp4)

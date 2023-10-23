@@ -1,6 +1,6 @@
 ## 陆游器/陆地游泳器产品说明书
 
-<img src="https://picgobucketshihy.oss-cn-shanghai.aliyuncs.com/image-20231024022345138.png" alt="image-20231024022345138" style="zoom:50%;" />
+![](https://github.com/ophwsjtu18/ohw23f/tree/main/shy/media/luyouqi.png)
 
 1. [产品概述](#1-产品概述)
 2. [技术规格](#2-技术规格)

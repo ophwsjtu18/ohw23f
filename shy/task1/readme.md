@@ -27,5 +27,5 @@ cv2.imwrite('9rectangles.jpg',img)
 
 ### 2.结果
 
-![image-20231024025250687](https://picgobucketshihy.oss-cn-shanghai.aliyuncs.com/image-20231024025250687.png)
+![](https://github.com/ophwsjtu18/ohw23f/tree/main/shy/task1/9rectangles.jpg)
 

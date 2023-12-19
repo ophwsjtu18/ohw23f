@@ -2,6 +2,9 @@
 [好用的电风扇使用手册](#好用的电风扇使用手册)  
 [作业1](#作业1)  
 [作业2](#作业2)
+[作业3](#作业3)
+[作业4](#作业4)
+[作业5](#作业5)
 
 ---
 # 好用的电风扇使用手册
@@ -95,5 +98,101 @@ client.on_message = on_message
 client.loop_forever()
 
 ```
-## 作业3
+# 作业3
 mixly image:
+![mixly](https://github.com/ophwsjtu18/ohw23f/blob/main/hpc/mixly.png)
+
+# 作业4
+[python codes](https://github.com/ophwsjtu18/ohw23f/edit/main/hpc/buildhous.py)
+```python
+from mcpi.minecraft import Minecraft
+
+mc=Minecraft.create()
+pos=mc.player.getTilePos()
+mc.postToChat("250, 100, 200")
+
+# 外墙
+mc.setBlocks(250, 100, 200, 270, 120, 220, 1)
+
+# 掏空
+mc.setBlocks(252, 100, 202, 268, 120, 218, 0)
+
+# 门
+mc.setBlocks(258, 100, 200, 262, 105, 202, 0)
+
+# 地板
+mc.setBlocks(252, 100, 202, 268, 100, 218, 57)
+
+# 天花板
+mc.setBlocks(248, 121, 198, 272, 121, 222, 29)
+
+# 灯
+mc.setBlocks(252, 119, 202, 268, 119, 218, 20)
+mc.setBlocks(252, 120, 202, 268, 120, 218, 11)
+
+# 窗户
+mc.setBlocks(250, 105, 205, 251, 115, 215, 20)
+mc.setBlocks(269, 105, 205, 270, 115, 215, 20)
+```
+
+# 作业5
+[python codes](https://github.com/ophwsjtu18/ohw23f/edit/main/hpc/control_minecraft_movement.py)
+```python
+import numpy as np
+from mcpi.minecraft import Minecraft
+import cv2
+def move(x,y,w,h):
+    
+    pos = mc.player.getPos()
+    
+    center_x = x + w / 2
+    center_y = y + h / 2
+    weithavg = ( w + h ) / 2
+    
+    flagx = 0
+    flagy = 0
+    flagz = 0
+    if y < 140:
+        flagx = 0.5
+    elif y > 240:
+        flagx = -0.5
+        
+    if x < 220:
+        flagz = 0.5
+    elif x >320:
+        flagz = -0.5
+        
+    if weithavg > 170:
+        flagy = 0.5
+    elif weithavg < 130:
+        flagy = -0.5
+        
+    mc.player.setPos(pos.x + flagx, pos.y + flagy, pos.z + flagz)
+    #mc.player.setPos(pos.x+1,pos.y+1,pos.z+1)
+    
+
+cap = cv2.VideoCapture(0)
+
+mc = Minecraft.create()
+
+while(True):
+    
+    
+    ret, frame = cap.read()
+    frame = cv2.flip(frame,1)
+    face_cascade = cv2.CascadeClassifier('C:/Users/41640/miniconda3/envs/DIP2023/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+    for (x,y,w,h) in faces:
+        frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
+        roi_gray = gray[y:y+h, x:x+w]
+        roi_color = frame[y:y+h, x:x+w]
+        move(x,y,w,h)
+    #print(frame.shape)
+    cv2.imshow('controler',frame)
+    
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
+```

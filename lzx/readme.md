@@ -16,7 +16,7 @@ cv2.imshow('image', img)
 cv2.waitKey(0)
 cv2.destoryAllWindows()
 ```
-![rabbit](https://github.com/ophwsjtu18/ohw23f/blob/main/lzx/hw1/result1.jpg)
+![rabbit](https://github.com/ophwsjtu18/ohw23f/blob/main/lzx/hw1/result1.png)
 
 # 作业2
 code:
@@ -43,7 +43,7 @@ cv2.imshow('image', img)
 cv2.waitKey(0)
 cv2.destoryAllWindows()
 ```
-![rabbit](https://github.com/ophwsjtu18/ohw23f/blob/main/lzx/hw2/result2.jpg)
+![rabbit](https://github.com/ophwsjtu18/ohw23f/blob/main/lzx/hw2/result2.png)
 # 作业3
 code:
 ```python
